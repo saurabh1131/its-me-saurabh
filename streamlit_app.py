@@ -20,13 +20,13 @@ st.write("---")
 
 # Introduction
 with st.container():
-    st.header("About Me")
+    st.header("About Me 👋")
     st.write(data["personal"]["introduction"])
     st.write("---")
 
 # Personal Details
 with st.container():
-    st.header("A Glimpse Into My Life")
+    st.header("A Glimpse Into My Life 🌟")
     st.write(f"**Education:** {data['personal']['education']}")
     st.write(f"**My Passions:** {', '.join(data['personal']['passions'])}")
     st.write(f"**Favorite Reads:** {', '.join(data['personal']['favorite_reads'])}")
@@ -37,7 +37,7 @@ with st.container():
 
 # Career Highlights
 with st.container():
-    st.header("Career Highlights")
+    st.header("Career Highlights 💼")
     for job in data["job"]["work_experience"]:
         with st.expander(f"{job['company']} - {job['role']}"):
             st.write(f"**Duration:** {job['duration']}")
@@ -46,20 +46,20 @@ with st.container():
 
 # Family Background
 with st.container():
-    st.header("Family Background")
+    st.header("Family Background 👨‍👩‍👧")
     st.write(data["family"]["description"])
     st.write("---")
 
 # Achievements
 with st.container():
-    st.header("Achievements")
+    st.header("Achievements 🏆")
     for achievement in data["achievements"]:
         st.write(f"- {achievement}")
     st.write("---")
 
 # Contact Information
 with st.container():
-    st.header("Get in Touch")
+    st.header("Get in Touch 📞")
     st.write(f"**Phone:** {data['contact']['phone']}")
     st.write(f"**Email:** [{data['contact']['email']}](mailto:{data['contact']['email']})")
     st.write(f"**Work Profile:** [{data['contact']['website']}]({data['contact']['website']})")
@@ -70,7 +70,7 @@ with st.container():
 
 # Photos
 with st.container():
-    st.header("Moments")
+    st.header("Moments 📸")
     cols = st.columns(3)
     for i, photo in enumerate(data["photos"]):
         cols[i % 3].image(photo, use_container_width=True)
