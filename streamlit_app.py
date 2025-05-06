@@ -131,4 +131,4 @@ def footer_section():
         """,
         unsafe_allow_html=True
     )
-footer_section()
+# footer_section()
