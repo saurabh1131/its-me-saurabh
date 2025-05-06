@@ -77,7 +77,6 @@ with st.container():
     st.write("---")
 
 # Footer section with visitor counter
-@st.cache_data
 def footer_section():
     """App Footer section with visitor counter"""
     visitor_file = 'visitor_count.json'
