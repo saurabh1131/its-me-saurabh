@@ -61,7 +61,7 @@ with st.container():
     st.header("Get in Touch")
     st.write(f"**Phone:** {data['contact']['phone']}")
     st.write(f"**Email:** [{data['contact']['email']}](mailto:{data['contact']['email']})")
-    st.write(f"**Job Profile:** [{data['contact']['website']}]({data['contact']['website']})")
+    st.write(f"**Work Profile:** [{data['contact']['website']}]({data['contact']['website']})")
     # st.write(f"**Medium:** [{data['contact']['medium']}]({data['contact']['medium']})")
     st.write(f"**Instagram:** [{data['contact']['instagram']}]({data['contact']['instagram']})")
     st.write(f"**LinkedIn:** [{data['contact']['linkedin']}]({data['contact']['linkedin']})")
