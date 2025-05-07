@@ -27,11 +27,11 @@ with st.container():
 # Personal Details
 with st.container():
     st.header("A Glimpse Into My Life 🌟")
-    st.write(f"**Education:** {data['personal']['education']}")
-    st.write(f"**My Passions:** {', '.join(data['personal']['passions'])}")
-    st.write(f"**Favorite Reads:** {', '.join(data['personal']['favorite_reads'])}")
+    st.write(f"**🎓 Education:** {data['personal']['education']}")
+    st.write(f"**🔥 My Passions:** {', '.join(data['personal']['passions'])}")
+    st.write(f"**📖 Favorite Reads:** {', '.join(data['personal']['favorite_reads'])}")
     # st.write(f"**Languages Spoken:** {', '.join(data['personal']['languages'])}")
-    st.write(f"**Wish Me On:** {data['personal']['dob']}")
+    st.write(f"**🎂 Wish Me On:** {data['personal']['dob']}")
     # st.write(f"**Height:** {data['personal']['height']}")
     st.write("---")
 
