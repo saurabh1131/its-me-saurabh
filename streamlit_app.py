@@ -30,7 +30,7 @@ with st.container():
     st.write(f"**Education:** {data['personal']['education']}")
     st.write(f"**My Passions:** {', '.join(data['personal']['passions'])}")
     st.write(f"**Favorite Reads:** {', '.join(data['personal']['favorite_reads'])}")
-    st.write(f"**Languages Spoken:** {', '.join(data['personal']['languages'])}")
+    # st.write(f"**Languages Spoken:** {', '.join(data['personal']['languages'])}")
     st.write(f"**Wish Me On:** {data['personal']['dob']}")
     # st.write(f"**Height:** {data['personal']['height']}")
     st.write("---")
@@ -39,7 +39,7 @@ with st.container():
 with st.container():
     st.header("Career Highlights 💼")
     for job in data["job"]["work_experience"]:
-        with st.expander(f"{job['company']} - {job['role']}"):
+        with st.expander(f"{job['role']}"):
             st.write(f"**Duration:** {job['duration']}")
             st.write(job["description"])
     st.write("---")
@@ -132,3 +132,9 @@ def footer_section():
         unsafe_allow_html=True
     )
 # footer_section()
+
+# Thanks for Visiting
+with st.container():
+    st.subheader("Thanks for Visiting! 🙌")
+    st.write("I hope you enjoyed learning more about me. Have a great time ahead!")
+    st.write("---")

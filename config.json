@@ -1,14 +1,14 @@
 {
     "header": {
         "name": "SAURABH D. BRAHMANKAR",
-        "tagline": "Software Dev 🤖 | Innovator💡 | Adventurer🏄‍♂️",
+        "tagline": "Software Guy👨🏼‍💻 | Innovator💡 | Adventurer🏄‍♂️",
         "profile_picture": "photos/photo1.jpeg"
     },
     "personal": {
         "introduction": "Hi, I’m Saurabh! I’m a tech enthusiast and software professional with a knack for innovation—I’ve even filed several US patents in AI/ML! Grounded, humorous, and ambitious, I’m also a fitness lover who’s always up for an adventure—whether it’s hiking in nature, playing sports, or exploring new spots. And I’m a big foodie too!",
         "dob": "15-JAN-1994",
         "height": "5'9\"",
-        "education": "B.E. (E&TC), G.H.R.C.E. (Autonomous) | 2016 | CGPA: 9.13/10",
+        "education": "Bachelor of Engineering | 2016 | CGPA: 9.13/10",
         "passions": ["Innovation", "Travel / Sightseeing", "Trekking / Adventure sports", "Health & Fitness", "Yoga / Meditation", "Badminton", "Cricket", "Chess", "Video / Computer games", "Cooking", "Photography"],
         "favorite_reads": ["Science Fiction", "Humour", "Business / Occupational", "Self-help", "Philosophy / Spiritual"],
         "languages": ["English", "Hindi", "Marathi"]
@@ -16,27 +16,24 @@
     "job": {
         "work_experience": [
             {
-                "company": "Ciena India Private Ltd., Pune",
                 "role": "Data Scientist",
                 "duration": "2021 – Present",
-                "description": "I lead & contribute cutting-edge AI/ML projects. My work helps optimize networks and improve operational efficiency through data-driven innovation."
+                "description": "I lead and contribute to innovative projects in AI and machine learning, focusing on creating smart solutions that enhance efficiency and performance through data-driven approaches."
             },
             {
-                "company": "Tech Mahindra Ltd., Mumbai",
                 "role": "Software Engineer (ML)",
                 "duration": "2017 – 2021",
-                "description": "I developed predictive analytics tools and self-healing systems, streamlining enterprise project delivery with machine learning and automation."
+                "description": "I worked on developing tools for predictive analytics and automation, streamlining project delivery and operations using machine learning techniques."
             }
         ]
     },
     "family": {
         "description": "I come from a family with a strong bond that values education, hard work, staying grounded and staying connected.  I grew up surrounded by love and support, which helped shape who I am today."},
     "achievements": [
-            "Published multiple US patent for a novel AI/ML-based solutions.",
-            "Won Tech Mahindra Hackathon twice for building innovative AI solutions.",
-            "Received Ciena’s 'Bravo' Award 10+ times for contributions to AI projects and patents.",
-            "Tech Mahindra’s 'Pat on Back' Award: 5+ times for developing complex codes and POC work.",
-            "Awarded 'Man of the Match' in a corporate season-ball cricket tournament!"
+        "Made a mark in tech innovation with AI patents and hackathon wins.",
+        "Earned recognition at work for impactful projects and creative solutions.",
+        "Shined on the field as a Cricket star in corporate tournaments.",
+        "Conquered several mountains during my adventurous treks!"
     ],
     "contact": {
         "phone": "+91-80558095XX",
