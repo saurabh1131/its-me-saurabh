@@ -38,11 +38,11 @@ with st.container():
 # Career Highlights
 with st.container():
     st.header("Career Highlights 💼")
-    st.write(f"*Work Profile: [{data['contact']['website']}]({data['contact']['website']})*")
     for job in data["job"]["work_experience"]:
         with st.expander(f"{job['role']}"):
             st.write(f"**Duration:** {job['duration']}")
             st.write(job["description"])
+    st.write(f"🔗 *Work Profile: [{data['contact']['website']}]({data['contact']['website']})*")
     st.write("---")
 
 # Family Background
