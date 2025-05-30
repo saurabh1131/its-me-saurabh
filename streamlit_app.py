@@ -40,9 +40,9 @@ with st.container():
     st.header("Career Highlights 💼")
     for job in data["job"]["work_experience"]:
         with st.expander(f"{job['role']}"):
-            st.write(f"**Duration:** {job['duration']}")
+            # st.write(f"**Duration:** {job['duration']}")
             st.write(job["description"])
-    st.write(f"🔗 *Work Profile: [{data['contact']['website']}]({data['contact']['website']})*")
+    # st.write(f"🔗 *Work Profile: [{data['contact']['website']}]({data['contact']['website']})*")
     st.write("---")
 
 # Family Background
@@ -61,12 +61,11 @@ with st.container():
 # Contact Information
 with st.container():
     st.header("Get in Touch 📞")
-    st.write(f"**Phone:** {data['contact']['phone']}")
-    st.write(f"**Email:** [{data['contact']['email']}](mailto:{data['contact']['email']})")
-    st.write(f"**Work Profile:** [{data['contact']['website']}]({data['contact']['website']})")
-    # st.write(f"**Medium:** [{data['contact']['medium']}]({data['contact']['medium']})")
-    st.write(f"**Instagram:** [{data['contact']['instagram']}]({data['contact']['instagram']})")
+    # st.write(f"**Work Profile:** [{data['contact']['website']}]({data['contact']['website']})")
     st.write(f"**LinkedIn:** [{data['contact']['linkedin']}]({data['contact']['linkedin']})")
+    st.write(f"**Instagram:** [{data['contact']['instagram']}]({data['contact']['instagram']})")
+    st.write(f"**Email:** [{data['contact']['email']}](mailto:{data['contact']['email']})")
+    st.write(f"**Phone:** {data['contact']['phone']}")
     st.write("---")
 
 # Photos
@@ -77,65 +76,8 @@ with st.container():
         cols[i % 4].image(photo, use_container_width=True)
     st.write("---")
 
-# # Footer section with visitor counter
-# def footer_section():
-#     """App Footer section with visitor counter"""
-#     visitor_file = 'visitor_count.json'
-    
-#     if 'visitor_counted' not in st.session_state:
-#         st.session_state.visitor_counted = False
-        
-#         if os.path.exists(visitor_file):
-#             try:
-#                 with open(visitor_file, 'r') as f:
-#                     visitor_data = json.load(f)
-#                     visitor_count = visitor_data.get('count', 0)
-#             except (json.JSONDecodeError, FileNotFoundError):
-#                 visitor_count = 0
-#         else:
-#             visitor_count = 0
-        
-#         visitor_count += 1
-        
-#         with open(visitor_file, 'w') as f:
-#             json.dump({'count': visitor_count}, f)
-        
-#         st.session_state.visitor_counted = True
-#     else:
-#         if os.path.exists(visitor_file):
-#             try:
-#                 with open(visitor_file, 'r') as f:
-#                     visitor_data = json.load(f)
-#                     visitor_count = visitor_data.get('count', 0)
-#             except (json.JSONDecodeError, FileNotFoundError):
-#                 visitor_count = 0
-#         else:
-#             visitor_count = 0
-    
-#     st.markdown(
-#         f"""
-#         <style>
-#             #footer {{
-#                 position: fixed;
-#                 bottom: 10px;
-#                 left: 50%;
-#                 transform: translateX(-50%);
-#                 font-size: 14px;
-#                 color: gray;
-#                 text-align: center;
-#                 z-index: 1000;
-#             }}
-#         </style>
-#         <div id="footer">
-#             Built by <b>XploreMe@Sports</b> with 🫰〔Visits: {visitor_count}〕
-#         </div>
-#         """,
-#         unsafe_allow_html=True
-#     )
-# footer_section()
-
 # Thanks for Visiting
 with st.container():
     st.subheader("Thanks for Visiting! 🙌")
-    st.write("I hope you enjoyed learning more about me. Have a great time ahead!")
+    st.write("I hope you enjoyed learning more about me. Have a great time ahead! 🙂")
     st.write("---")
